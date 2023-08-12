@@ -96,6 +96,11 @@ main section h2 {
     font-weight: 300;
 }
 
+#sky-img {
+    height: 360px;
+    width: 900px;
+}
+
 /* footer */
 #footer {
     display: flex;
