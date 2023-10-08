@@ -5,89 +5,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Web developer portfolio for JJ Saoit">
         <meta name="author" content="JJ Saoit">
-        <title>jj's museum</title>
-        
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./Assets/css/style.css">
+        <title>jj's museum</title>
     </head>
+    
+    <!-- body -->
     <body>
         <!-- header -->
         <header>
-            <div id="avatar-cont">
-                <a href="./Assets/images/me.jpg">
-                    <img id="avatar"  src="./Assets/images/me.jpg" alt="my avatar">
-                </a>
-            </div>
-            <div id="nav-cont">
-                <nav id="nav-bar">
-                    <ul id="nav-menu">
-                        <li class="nav-link-cont">
-                            <a class="nav-link" href="#about">about.</a>
-                        </li>
-                        <li class="nav-link-cont">
-                            <a class="nav-link" href="#projects">projects.</a>
-                        </li>
-                        <li class="nav-link-cont">
-                            <a class="nav-link" href="#contacts">contacts.</a>
-                        </li>
-                        <li class="nav-link-cont">
-                            <a class="nav-link" href="#resume">resume.</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <!-- navbar -->
+            <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img id="pfp-img" src="./Assets/images/me.jpg" alt="Profile Picture" width="48" height="48">
+                        jj's museum
+                    </a>
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbar" 
+                        aria-controls="navbar" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-item nav-link" href="#about">about</a>
+                            <a class="nav-item nav-link" href="#projects">projects</a>
+                            <a class="nav-item nav-link" href="#contacts">contacts</a>
+                            <a class="nav-item nav-link" href="#resume">resume</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-        
+
         <!-- main -->
         <main id="main">
-            <!-- about -->
-            <section class="info-section" id="about">
-                <h2>Hi, my name is JJ Saoit.</h2>
-                <article>
-                    I'm a beginner web developer.
-                </article>
-            </section>
-            
-            <!-- projects  -->
-            <section class="info-section" id="projects">
-                <h2>projects.</h2>
-                <section id="project_skywatch">
-                    <h3>Skywatch</h3>
-                    <article>This website can track your flight and give you the forecast to your destination</article>
-                    <section>GitHub URL: <a id="sky-link" href="https://github.com/jensenjamessaoit/Skywatch">https://github.com/jensenjamessaoit/Skywatch</a></section>
-                    <div id="sky-img-container"><img id="sky-img" src="./Assets/images/skywatch_screenshot.PNG" alt="screenshot of skywatch web"></div>
-                </section>
-                 <section id="doodle_duel"> 
-                    <h3>Doodle Duel</h3>
-                    <article>Game where you are timed to doodle a certain prompt and people get to vote on it, whoever gets more votes wins! </article>
-                    <section>GitHub URL: <a id="sky-link" href="https://github.com/Leucisticboi/DoodleDuel">https://github.com/Leucisticboi/DoodleDuel</a></section>
-                    <div id="sky-img-container"><img id="doodle-img" src="./Assets/images/doodle.PNG" alt="screenshot of Doodle Duel"></div>
-                </section>
-            </section>
-            
-            <!-- contacts -->
-            <section class="info-section" id="contacts">
-                <h2>contacts.</h2>
-                <article>
-                    <h4>email: <a class="contacts" href="mailto: saoitjensen@gmail.com">saoitjensen@gmail.com</a> </h4> 
-                    <h4>phone: <span class="contacts">801-471-8817</span></h4> 
-                    <h4>github: <a class="contacts" href="https://github.com/jensenjamessaoit">jensenjamessaoit</a></h4>
-                </article>
-            </section>
-            
-            <!-- resume -->
-            <section class="info-section" id="resume">
-                <h2>resume.</h2>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis urna id volutpat lacus laoreet non curabitur. Gravida in fermentum et sollicitudin ac orci phasellus egestas.
-                </article>
-            </section>
+            <div></div>
         </main>
-        
+
         <!-- footer -->
         <footer id="footer">
-            Pls hire me, thanks! 
+
         </footer>
 
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"
+        ></script>
         <script src='./Assets/js/script.js'></script>
     </body>
 </html>
